@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "MFIOP Toolkit — Mesoscopic Field-Infrared Oscillatory Processing"
+abstract: >
+  Minimal reproducible implementation of the MFIOP geometry → spectrum pipeline.
+  Maps protein structures (PDB) to dipolar coupling matrices and computes the
+  anisotropic infrared spectral response A(ω) directly from atomic coordinates,
+  with no fitted parameters.
+authors:
+  - family-names: "Zumpano Blumenfeld"
+    given-names: "Verónica"
+    orcid: "https://orcid.org/0009-0006-2030-1849"
+    affiliation: "Independent Researcher, Montevideo, Uruguay"
+version: "2.0"
+date-released: "2026-05-17"
+license: MIT
+repository-code: "https://github.com/Vlattice/mfiop-toolkit"
+url: "https://doi.org/10.5281/zenodo.18166770"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.18166770
+    description: "Zenodo concept DOI (always points to latest version)"
+keywords:
+  - microtubules
+  - tryptophan
+  - dipolar coupling
+  - infrared spectroscopy
+  - mesoscopic ordering
+  - collective modes
+  - PDB 5SYF
+  - nano-FTIR
+  - bioinformatics
+  - vibronic coupling
+preferred-citation:
+  type: article
+  title: "MFIOP — Mesoscopic Field-Infrared Oscillatory Processing: A Geometry-Determined Bioinformatic Framework for Spectral Organization in Protein Dipolar Lattices"
+  authors:
+    - family-names: "Zumpano Blumenfeld"
+      given-names: "Verónica"
+      orcid: "https://orcid.org/0009-0006-2030-1849"
+  year: 2026
+  doi: "10.5281/zenodo.18166770"
+  url: "https://doi.org/10.5281/zenodo.18166770"
