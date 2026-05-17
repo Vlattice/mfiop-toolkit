@@ -15,11 +15,14 @@ version: "2.0"
 date-released: "2026-05-17"
 license: MIT
 repository-code: "https://github.com/Vlattice/mfiop-toolkit"
-url: "https://doi.org/10.5281/zenodo.18166770"
+url: "https://doi.org/10.5281/zenodo.17689487"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.18166770
-    description: "Zenodo concept DOI (always points to latest version)"
+    value: 10.5281/zenodo.17689487
+    description: "Concept DOI — always resolves to the latest version"
+  - type: doi
+    value: 10.5281/zenodo.20262151
+    description: "Version DOI — MFIOP v2.0 (May 2026)"
 keywords:
   - microtubules
   - tryptophan
@@ -39,5 +42,5 @@ preferred-citation:
       given-names: "Verónica"
       orcid: "https://orcid.org/0009-0006-2030-1849"
   year: 2026
-  doi: "10.5281/zenodo.18166770"
-  url: "https://doi.org/10.5281/zenodo.18166770"
+  doi: "10.5281/zenodo.17689487"
+  url: "https://doi.org/10.5281/zenodo.17689487"
