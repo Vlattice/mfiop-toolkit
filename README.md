@@ -109,7 +109,7 @@ If you use this code, please cite:
   publisher    = {Zenodo},
   version      = {v2.0},
   doi          = {10.5281/zenodo.18166770},
-  url          = {https://doi.org/10.5281/zenodo.18166770}
+  url          = {https://zenodo.org/records/20327279}
 }
 ```
 
