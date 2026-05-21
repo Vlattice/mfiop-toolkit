@@ -8,7 +8,7 @@ This is a teaching and verification toolkit. It reproduces the central geometry 
 
 For the full theoretical framework, see:
 
-> Zumpano Blumenfeld, V. (2026). *MFIOP — Mesoscopic Field-Infrared Oscillatory Processing: A Geometry-Determined Bioinformatic Framework for Spectral Organization in Protein Dipolar Lattices.* Zenodo. https://doi.org/10.5281/zenodo.18166770
+> Zumpano Blumenfeld, V. (2026). *MFIOP — Mesoscopic Field-Infrared Oscillatory Processing: A Geometry-Determined Bioinformatic Framework for Spectral Organization in Protein Dipolar Lattices.* Zenodo. https://zenodo.org/records/20327279
 
 ---
 
