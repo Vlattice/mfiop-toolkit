@@ -108,7 +108,7 @@ If you use this code, please cite:
   year         = {2026},
   publisher    = {Zenodo},
   version      = {v2.0},
-  doi          = {10.5281/zenodo.18166770},
+  doi          = {10.5281/zenodo.17689487},
   url          = {https://zenodo.org/records/20327279}
 }
 ```
