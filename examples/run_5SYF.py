@@ -3,11 +3,18 @@ run_5SYF.py
 -----------
 Minimal example: geometry → spectrum for αβ-tubulin (PDB 5SYF).
 
-Expected output (PDB 5SYF, μ = 2.1 D):
-    λ_max  ≈  9.49 cm⁻¹
-    C_eff  ≈  1.79
-    Dominant modes at splittings: −9.49, −1.44, −0.34 cm⁻¹
-    Anisotropy A_z/(A_x+A_y) ≈ 0.652
+Expected output (PDB 5SYF asymmetric unit, μ = 2.1 D):
+    λ_max  ≈  14.23 cm⁻¹
+    C_eff  ≈  2.68
+    Dominant modes at splittings: −14.23, −1.46, −0.27 cm⁻¹
+    Anisotropy A_z/(A_x+A_y) ≈ 0.605
+    Shortest TRP pairs: B103–B407 = 12.44 Å, A407–B346 = 16.04 Å, A346–A388 = 19.66 Å
+
+    NOTE (2026-10): these values are computed directly from the published 5SYF
+    coordinates (asymmetric unit; .pdb and .cif agree). Earlier MFIOP documents
+    reported λ_max ≈ 9.49 cm⁻¹ and a shortest pair of 15.45 Å; those came from a
+    coordinate set (5SYF_TRP.npz) that does NOT match the deposited 5SYF structure.
+    The numbers below, from the real structure, supersede them.
 
 Usage:
     python examples/run_5SYF.py

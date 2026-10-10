@@ -24,3 +24,8 @@ Place the file as `data/5SYF.pdb`.
 These are not required for the minimal toolkit but are used in the proteome-scale analysis described in the MFIOP v2.0 paper.
 
 PDB files are not redistributed in this repository — please download directly from RCSB.
+
+## Coordinate note (2026-10)
+All numbers are computed from the deposited 5SYF coordinates (asymmetric unit).
+`.pdb` and `.cif` agree: shortest TRP pair B103–B407 = 12.44 Å. A previously used
+`5SYF_TRP.npz` gave 15.49 Å and does not match the deposited structure; it is not used.
