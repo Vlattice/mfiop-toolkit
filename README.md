@@ -4,7 +4,25 @@
 
 This repository contains the core code behind the MFIOP framework (Mesoscopic Field-Infrared Oscillatory Processing). It maps a protein structure (PDB) to a dipolar coupling matrix, diagonalises it, and computes the resulting anisotropic infrared spectral response A(ω) — all directly from atomic coordinates, with no fitted parameters.
 
-This is a teaching and verification toolkit. It reproduces the central geometry → spectrum mapping described in the MFIOP v2.0 paper. It does **not** include Monte Carlo robustness analysis, the ZB composite score, the proteome-scale scan, or the inhomogeneous broadening module. Those will be added in future releases.
+This is a teaching and verification toolkit. It reproduces the central geometry → spectrum mapping and now also includes the companion analyses of the MFIOP series.
+
+## What's in this repository (updated 2026-10)
+
+**Core pipeline** (`src/`, `examples/`): geometry → dipolar coupling → spectrum, no fitted parameters.
+
+**Notebooks** (`notebooks/`):
+- `MFIOP_v3_detectability_budget.ipynb` — IR detectability budget over (μ_eff, γ, σ_inhom).
+- `MFIOP_v4_lindblad_dynamics.ipynb` — open-system (Lindblad) transport on the same matrix.
+- `MFIOP_uv_superradiance.ipynb` — UV superradiance descriptor S (geometry-only).
+- `MFIOP_v2_fig01b_vibronic_mu_eff.ipynb`, `MFIOP_v2_statistics_hardening.ipynb`.
+
+**Results** (`results/`):
+- `orca_mueff/` — first-principles TD-DFT (ORCA) confirming the ¹Lₐ dipole (|μ_ge| = 1.86–2.59 D; literature 2.1 D lies between). Inputs + outputs included.
+- `novelty_audit/` — preliminary 5SYF-vs-3J6F control. **Honest status: inconclusive** — the independence of the Trp descriptor from amide-I cannot be settled with two structures; a multi-structure panel is the next step. See its README.
+
+### Verified vs open (for honesty)
+- **Verified:** the UV superradiance descriptor (S = 5.06, 92nd percentile vs orientation null) and the electronic dipole (TD-DFT).
+- **Open:** whether the IR descriptor adds information independent of amide-I — requires a multi-structure panel, not yet done.
 
 For the full theoretical framework, see:
 

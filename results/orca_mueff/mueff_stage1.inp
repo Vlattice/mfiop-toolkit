@@ -1,0 +1,28 @@
+! wB97X-D3 def2-TZVP Opt Freq TightSCF RIJCOSX
+# Ground-state optimisation + vibrational frequencies of 3-methylindole
+# (the tryptophan indole chromophore surrogate).
+# Just run:   orca mueff_stage1.inp > mueff_stage1.out
+# Then send back:  mueff_stage1.out  AND  mueff_stage1.hess
+%maxcore 3000
+%pal nprocs 4 end
+* xyz 0 1
+C      2.479546    -1.184835     0.024969
+C      1.470972    -0.094634     0.050773
+C      1.723447     1.259942     0.140527
+N      0.525570     1.922336     0.133784
+C     -0.513728     1.026871     0.041021
+C     -1.895696     1.248336     0.001155
+C     -2.728400     0.129703    -0.096883
+C     -2.197810    -1.156832    -0.152605
+C     -0.813396    -1.359741    -0.111550
+C      0.049019    -0.248511    -0.012811
+H      2.397083    -1.759972    -0.902806
+H      2.329161    -1.864763     0.869616
+H      3.497581    -0.786941     0.087503
+H      2.654051     1.807400     0.208551
+H      0.413602     2.924775     0.188753
+H     -2.312051     2.249185     0.044366
+H     -3.806672     0.267411    -0.130062
+H     -2.862942    -2.013254    -0.228720
+H     -0.409336    -2.366476    -0.155581
+*
