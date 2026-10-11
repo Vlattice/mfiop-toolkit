@@ -1,0 +1,35 @@
+# ============================================================
+# MFIOP - Paso 1 de 2: optimizacion + frecuencias de skatole (3-metilindol)
+# Objetivo: obtener los modos normales para ubicar el modo de ~1020 cm-1
+#           (estiramiento del anillo indol). Con eso, en el paso 2,
+#           se calcula cuanto dipolo electronico "presta" ese modo vibracional.
+# Metodo:   CAM-B3LYP / def2-SVP / D3BJ  (el MISMO de la corrida electronica previa)
+# IMPORTANTE: correr EN SERIE (nprocs 1). Asi se evita el error de MPI/pathname
+#             que aparecio la vez pasada con nprocs 4.
+# Geometria verificada: C9H9N, plana, singlete neutro (carga 0, multiplicidad 1).
+# ============================================================
+! CAM-B3LYP def2-SVP D3BJ TightOpt Freq TightSCF
+%maxcore 3000
+%pal nprocs 1 end
+
+* xyz 0 1
+C     -2.696644    -0.522282     0.089109
+C     -1.446561     0.279738     0.067088
+C     -1.349578     1.656462     0.110663
+N     -0.024152     1.996010     0.069718
+C      0.755516     0.865597    -0.000188
+C      2.147937     0.731272    -0.060117
+C      2.671579    -0.563283    -0.125509
+C      1.834352    -1.676309    -0.130601
+C      0.444238    -1.523379    -0.070122
+C     -0.110004    -0.228497    -0.003503
+H     -3.581072     0.120471     0.146379
+H     -2.777327    -1.129379    -0.818233
+H     -2.706855    -1.190503     0.956129
+H     -2.111770     2.422109     0.167311
+H      0.336627     2.939382     0.087887
+H      2.802720     1.596236    -0.056325
+H      3.749169    -0.702101    -0.173089
+H      2.261961    -2.674390    -0.181967
+H     -0.200136    -2.397153    -0.074631
+*
